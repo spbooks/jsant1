@@ -1,0 +1,46 @@
+#products
+{
+  list-style: none;
+}
+
+#products li
+{
+  position: relative;
+  z-index: 100;
+  width: 65px;
+  height: 59px;
+  margin-bottom: 15px;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+}
+
+#shirtArsenal
+{
+  background-image: url(../images/shirt_arsenal.gif);
+}
+
+#shirtChelsea
+{
+  background-image: url(../images/shirt_chelsea.gif);
+}
+
+#shirtWestham
+{
+  background-image: url(../images/shirt_westham.gif);
+}
+
+#shirtLiverpool
+{
+  background-image: url(../images/shirt_liverpool.gif);
+}
+
+#shoppingCart
+{
+  position: absolute;
+  left: 250px;
+  top: 175px;
+  width: 100px;
+  height: 100px;
+  background-image: url(../images/shopping_cart.jpg);
+  background-repeat: no-repeat;
+}

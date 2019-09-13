@@ -1,0 +1,28 @@
+body
+{
+  font-size: 85%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+label
+{
+  position: relative;
+  float: left;
+  width: 6em;
+}
+
+input
+{
+  display: block;
+  margin-left: 6em;
+  margin-bottom: 1em;
+}
+
+.errorMsg
+{
+  position: absolute;
+  left: 17em;
+  width: 15em;
+  color: #FF0000;
+  font-weight: bold;
+}

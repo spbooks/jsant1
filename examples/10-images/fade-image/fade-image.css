@@ -1,0 +1,22 @@
+#before
+{
+  opacity: 1;
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+#after
+{
+  opacity: 0;
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+#before, #after
+{
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}

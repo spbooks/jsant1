@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <title>The JavaScript Anthology: Making form fields appear or disappear, based on the value of other fields</title>
+    <script type="text/javascript" src="scripts/fields_appear_disappear.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/fields_appear_disappear.css" />
+  </head>
+  <body>
+    <h1>
+      Making form fields appear or disappear, based on the value of other fields
+    </h1>
+    <form action="">
+      <fieldset>
+        <legend>Characters</legend>
+        <p>
+          Have you read The Hitch Hiker's Guide to the Galaxy?
+        </p>
+        <input type="radio" id="readYes" name="read" />
+        <label for="readYes">
+          Yes
+        </label>
+        <input type="radio" name="read" id="readNo" />
+        <label for="readNo">
+          No
+        </label>
+        <div id="optional">
+          <label for="character">
+            Who was your favorite character?
+          </label>
+          <select id="character" name="character">
+            <option value="A">Marvin</option>
+            <option value="B">Trillian</option>
+            <option value="C">Ford</option>
+          </select>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+
+
+
+
+</html>

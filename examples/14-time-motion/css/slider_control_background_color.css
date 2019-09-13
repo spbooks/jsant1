@@ -1,0 +1,54 @@
+
+body
+{
+	background-color: #000000;
+	text-align: center;
+}
+
+h1
+{
+	color: #FFFFFF;
+}
+
+form
+{
+	width: 327px;
+	w\idth: 277px;
+	margin: 0 auto;
+	border: 3px double #000000;
+	padding: 25px;
+	background-color: #FFFFFF;
+	text-align: left;
+}
+
+.sliderContainer
+{
+	width: 277px;
+	height: 50px;
+	background-repeat: no-repeat;
+	background-position: 0 5px;
+}
+
+.sliderWidget
+{
+	position: relative;
+	width: 23px;
+	height: 33px;
+	background-image: url(../images/color_scale_knob.gif);
+	background-repeat: no-repeat;
+}
+
+#channelRedSliderContainer
+{
+	background-image: url(../images/color_scale_red.jpg);
+}
+
+#channelGreenSliderContainer
+{
+	background-image: url(../images/color_scale_green.jpg);
+}
+
+#channelBlueSliderContainer
+{
+	background-image: url(../images/color_scale_blue.jpg);
+}
