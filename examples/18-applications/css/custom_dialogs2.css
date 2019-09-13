@@ -1,0 +1,63 @@
+#dropSheet
+{
+  background-color/**/: #000000;
+  background-image: url(../images/dots.gif);
+  background-image/**/: none;
+  opacity: 0.35;
+  filter: alpha(opacity=35);
+}
+
+.customDialog
+{
+  width: 300px;
+  padding-bottom: 12px;
+  background-image: url(../images/dialog_body.gif);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  font-size: 80%;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.customDialog h1
+{
+  position: relative;
+  top: -10px;
+  margin: 0;
+  border-bottom: 1px solid #001932;
+  padding: 5px 8px;
+  font-size: 120%;
+  background-image: url(../images/dialog_heading.gif);
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+  text-align: left;
+}
+
+.customDialog p
+{
+  min-height: 35px;
+  margin: 0 0 15px 0;
+  padding-right: 8px;
+  padding-left: 50px;
+  background-image: url(../images/dialog_icon.gif);
+  background-repeat: no-repeat;
+  background-position: 8px 3px;
+  text-align: left;
+}
+
+* html .customDialog p
+{
+  height: 35px;
+}
+
+.customDialog input
+{
+  margin: 0 5px;
+  border: 3px double #FFFFFF;
+  border-right-color: #7F7F7F;
+  border-bottom-color: #7F7F7F;
+  padding: 0 5px;
+  background-color: #BBBCBC;
+  background-image: url(../images/dialog_button.gif);
+  background-repeat: repeat-x;
+}

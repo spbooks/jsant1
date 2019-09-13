@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <title>The JavaScript Anthology: Validating a form with an unknown number of fields</title>
+    <script type="text/javascript" src="scripts/validate_form.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/validate_form.css" />
+  </head>
+  <body>
+    <h1>
+      Validating a form with an unknown number of fields
+    </h1>
+    <form id="contactForm">
+      <fieldset>
+        <legend>Contact Details</legend>
+        <label for="firstName">
+          First name:
+        </label>
+        <input type="text" id="firstName" name="firstName" class="checkRequired" />
+        <label for="lastName">
+          Last name:
+        </label>
+        <input type="text" id="lastName" name="lastName" class="checkRequired" />
+        <label for="email">
+          Email address:
+        </label>
+        <input type="text" id="email" name="email" class="checkRequired checkEmail" />
+        <label for="message">
+          Message:
+        </label>
+        <textarea id="message" name="message"></textarea>
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>

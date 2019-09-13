@@ -1,0 +1,86 @@
+/* structural styles and offsets */
+ul.foldertree, ul.foldertree li, ul.foldertree ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 100%;
+}
+
+ul.foldertree {
+    position: relative;
+    cursor: default;
+    width: 8.2em;
+}
+
+ul.foldertree li {
+    position: relative;
+    text-align: left;
+    cursor: pointer;
+    cursor: hand;
+    width: 8.2em;
+    margin: -1px 0 0 0;
+}
+
+ul.foldertree ul {
+    cursor: default;
+    width: 8.2em;
+    padding: 2px 0;
+    position: absolute;
+    left: -100em;
+    margin: 0 0 0 1em;
+}
+
+ul.foldertree ul li {
+    width: 8.2em;
+}
+
+
+/* design styles */
+ul.foldertree a:link, ul.foldertree a:visited {
+    display: block;
+    cursor: pointer;
+    cursor: hand;
+    padding: 1px 0 1px 15px;
+    font: 0.7em tahoma, verdana, sans-serif;
+    color: #000;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+ul.foldertree a:hover, ul.foldertree a:focus, ul.foldertree a:active {
+    text-decoration: underline;
+    color: #007;
+}
+
+
+/* plus/minus icons */
+ul.foldertree li.hasmenu > a:link, ul.foldertree li.hasmenu > a:visited {
+    background: url(plus.gif) no-repeat 1% 50%;
+}
+
+ul.foldertree li.hasmenu > a.rollover:link, 
+ul.foldertree li.hasmenu > a.rollover:visited {
+    background: url(minus.gif) no-repeat 1% 50%;
+}
+
+* html ul.foldertree li.hasmenu a:link, 
+* html ul.foldertree li.hasmenu a:visited {
+    background: expression(/hasmenu/.test(this.parentNode.className) 
+        ? "url(plus.gif) no-repeat 1% 50%" : "transparent");
+}
+
+* html ul.foldertree li.hasmenu a.rollover:link, 
+* html ul.foldertree li.hasmenu a.rollover:visited {
+    background: expression(/hasmenu/.test(this.parentNode.className) 
+        ? "url(minus.gif) no-repeat 1% 50%" : "transparent");
+}
+
+
+/* browser hacks */
+@media screen, projection {
+    * html ul.foldertree li {
+        display: inline; 
+        f\loat: left; 
+        background: #fff; 
+    }
+}

@@ -1,0 +1,35 @@
+body {
+  font-size: 100%;
+  font-family: sans-serif;
+  margin: 12px;
+  padding: 3px;
+}
+
+.sliderContainer {
+  width: 240px;
+  margin: 5px 0 20px 0;
+  background: #f7f7f7;
+  border-style: solid;
+  border-width: 1px 0;
+  border-color: #999 #eee #eee #999;
+  height: 24px;
+}
+
+.sliderWidget {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-width: 1px;
+  margin: 1px 0;
+  padding: 0;
+  text-align: center;
+}
+
+.sliderFocus {
+  background:#acf;
+}
+
+.offleft {
+  position:absolute;
+  top:-100em;
+}

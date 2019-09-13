@@ -1,0 +1,116 @@
+/* structural styles and offsets */
+ul.vertical, ul.vertical li, ul.vertical ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 100%;
+}
+
+ul.vertical {
+  position: absolute;
+  z-index: 1000;
+  cursor: default;
+  width: 8em;
+  left: 1em;
+  top: 1em;
+}
+
+ul.vertical li {
+  position: relative;
+  text-align: left;
+  cursor: pointer;
+  cursor: hand;
+  width: 8em;
+  margin: -1px 0 0 0;
+}
+
+ul.vertical ul {
+  z-index: 1020;
+  cursor: default;
+  width: 8.2em;
+  margin: -0.5em 0 0 7.5em;
+  position: absolute;
+  left: -100em;
+  top: 0;
+  padding: 1px 0 0 0;
+}
+
+ul.vertical ul li {
+  width: 8.2em;
+}
+
+ul.vertical ul ul {
+  margin: -0.5em 0 0 7.7em;
+}
+
+
+/* design styles */
+ul.vertical ul {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ffeca7 #a97741 #a97741 #ffeca7;
+}
+
+ul.vertical a:link, ul.vertical a:visited {
+  display: block;
+  cursor: pointer;
+  cursor: hand;
+  background: #ffc;
+  border: 1px solid #edbb85;
+  padding: 5px 7px;
+  font: normal normal bold 0.7em tahoma, verdana, sans-serif;
+  color: #008000;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+ul.vertical a:hover, ul.vertical a:focus, ul.vertical a:active,
+ul.vertical a.rollover:link, ul.vertical a.rollover:visited {
+  background: #ffefcf;
+  color: #806020;
+}
+
+/* submenu indicator arrows */
+ul.vertical li.hasmenu > a:link, ul.vertical li.hasmenu > a:visited {
+  background: url(right-green.gif) #ffc no-repeat 95% 50%;
+}
+
+ul.vertical li.hasmenu > a:hover,
+ul.vertical li.hasmenu > a:focus,
+ul.vertical li.hasmenu > a:active,
+ul.vertical li.hasmenu > a.rollover:link,
+ul.vertical li.hasmenu > a.rollover:visited {
+  background: url(right-red.gif) #ffefcf no-repeat 95% 50%;
+}
+
+* html ul.vertical li.hasmenu a,
+* html ul.vertical li.hasmenu a:visited {
+  background: expression(/hasmenu/.test(this.parentNode.className)
+      ? "url(right-green.gif) #ffc no-repeat 95% 50%" : "#ffc");
+}
+
+* html ul.vertical li.hasmenu a:hover,
+* html ul.vertical li.hasmenu a:active,
+* html ul.vertical li.hasmenu a.rollover,
+* html ul.vertical li.hasmenu a.rollover:visited {
+  background: expression(/hasmenu/.test(this.parentNode.className)
+      ? "url(right-red.gif) #ffefcf no-repeat 95% 50%" : "#ffefcf");
+}
+
+/* iframe layer */
+ul iframe {
+  position: absolute;
+  z-index: 1010;
+  border: none;
+}
+
+/* browser hacks */
+@media screen, projection {
+  * html ul.vertical li {
+    display: inline;
+    f\loat: left;
+    background: #fff;
+  }
+}
+* html ul.vertical li { position: static; }
+* html ul.vertical a:link, * html ul.vertical a:visited { position: relative; }

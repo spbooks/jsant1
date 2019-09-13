@@ -1,0 +1,29 @@
+#clock
+{
+  background: #000;
+  color: #f5d68e;
+  font: normal normal bold 1.1em "courier new", monospace;
+  float: left;
+  padding: 2px 2px 2px 5px;
+}
+
+#clock dt
+{
+  margin: 0;
+  padding: 2px 5px 0 0;
+  float: left;
+}
+
+#clock dd
+{
+  margin: 0;
+  padding: 0 0 0 2px;
+  float: left;
+}
+
+#clock img
+{
+  float: left;
+  margin: 2px 2px 2px 0;
+}
+

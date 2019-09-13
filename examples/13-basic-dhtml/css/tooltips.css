@@ -1,0 +1,13 @@
+.tooltip
+{
+  width: 261px;
+  w\idth: 196px;
+  height: 250px;
+  he\ight: 240px;
+  padding: 10px 10px 0 55px;
+  background-image: url(../images/enterprise.jpg);
+  background-repeat: no-repeat;
+  font-size: 80%;
+  color: #FFFFFF;
+  font-family: Arial, Helvetica, sans-serif;
+}

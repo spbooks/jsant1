@@ -1,0 +1,18 @@
+
+.sliderContainer
+{
+	width: 403px;
+	height: 80px;
+	background-image: url(../images/slider_scale.jpg);
+	background-repeat: no-repeat;
+	background-position: 3px 8px;
+}
+
+.sliderWidget
+{
+	position: relative;
+	width: 29px;
+	height: 35px;
+	background-image: url(../images/slider_knob.gif);
+	background-repeat: no-repeat;
+}

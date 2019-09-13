@@ -1,0 +1,25 @@
+div.tooltip {
+  background: InfoBackground;
+  font: small-caption;
+  border: 1px solid InfoText;
+  color: InfoText;
+  padding: 2px 4px;
+  text-align: left;
+  position: absolute;
+  width: auto;
+  height: auto;
+}
+
+div[class~="tooltip"] {
+  background: #feffc8;
+  font: normal normal normal 11px verdana,sans-serif;
+  border: 1px solid #c3c3c3;
+  color: #000;
+}
+
+div[class~="tooltip"]:lang(en) {
+  background: InfoBackground;
+  font: small-caption;
+  border: 1px solid InfoText;
+  color: InfoText;
+}

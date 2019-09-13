@@ -1,0 +1,28 @@
+body
+{
+  font-size: 85%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input
+{
+  float: left;
+}
+
+label
+{
+  display: block;
+  margin-left: 1.5em;
+  margin-bottom: 1em;
+}
+
+#optional label
+{
+  margin-left: 0;
+}
+
+.hidden
+{
+  position: absolute;
+  left: -1500em;
+}
